@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context=".DoctorRegistatiion">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hos"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_below="@+id/imgv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registation"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+            <LinearLayout
+                android:layout_below="@+id/tv1"
+                android:id="@+id/lv1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lv2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/demail"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/pas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/depas"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        android:inputType="textPassword"
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/dename"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/phon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/depho"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        android:inputType="phone"
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/deadd"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/doctor_experience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Experiance"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/dedit_doctor_experiance"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/ddoctor_specialization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Specialization"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/dedit_doctor_specialization"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+                    <TextView
+                        android:id="@+id/ddoctor_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+
+                        android:textColor="@android:color/white"/>
+                    <EditText
+                        android:id="@+id/dedit_doctor_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="14dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/editback"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/buttonback"
+                android:text="Sine up" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
